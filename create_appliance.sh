@@ -9,8 +9,8 @@
 # Contact: feedback@susestudio.com
 # ============================================================================
 
-image_file='image/Linux-Kamarada-42.2-KDE-Live.x86_64-42.2.0.iso'
-new_image_name="Linux-Kamarada-42.2-KDE-Live.x86_64-$(date +%Y%m%d).iso"
+image_file='image/LiveSUSE-Leap-42.2-KDE.x86_64-42.2.0.iso'
+new_image_name="LiveSUSE-Leap-42.2-KDE.x86_64-$(date +%Y%m%d).iso"
 image_arch='x86_64'
 schema_ver='5.2'
 base_system='Leap_42.1'
