@@ -1,5 +1,5 @@
-Linux Kamarada KDE appliance
-============================
+LiveSUSE Leap KDE appliance
+===========================
 
 Checkout the branch from the version you want. For example:
 
