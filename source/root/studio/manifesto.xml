@@ -43,6 +43,7 @@
         <source path="http://download.opensuse.org/update/leap/42.2/oss/"/>
       </repository>
       <packages type="image" patternType="onlyRequired">
+        <package name="kdeconnect-kde"/>
         <package name="yast2-vm"/>
         <package name="yast2-vpn"/>
         <package name="yast2-sound"/>

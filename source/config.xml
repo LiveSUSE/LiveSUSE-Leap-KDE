@@ -33,6 +33,7 @@
     <user name='root' pwd='$1$4M3FT6EF$g7Fs/3TwSCAHgIjHcFcvt/' home='/root' shell='/bin/bash'/>
   </users>
   <packages type='image' patternType='onlyRequired'>
+    <package name='kdeconnect-kde'/>
     <package name='yast2-vm'/>
     <package name='yast2-vpn'/>
     <package name='yast2-sound'/>
