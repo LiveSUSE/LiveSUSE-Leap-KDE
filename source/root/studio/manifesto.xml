@@ -43,6 +43,7 @@
         <source path="http://download.opensuse.org/update/leap/42.2/oss/"/>
       </repository>
       <packages type="image" patternType="onlyRequired">
+        <package name="xdg-user-dirs"/>
         <package name="bluedevil5"/>
         <package name="kaccounts-providers"/>
         <package name="kaccounts-integration"/>

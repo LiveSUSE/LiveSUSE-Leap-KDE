@@ -33,6 +33,7 @@
     <user name='root' pwd='$1$4M3FT6EF$g7Fs/3TwSCAHgIjHcFcvt/' home='/root' shell='/bin/bash'/>
   </users>
   <packages type='image' patternType='onlyRequired'>
+    <package name='xdg-user-dirs'/>
     <package name='bluedevil5'/>
     <package name='kaccounts-providers'/>
     <package name='kaccounts-integration'/>
