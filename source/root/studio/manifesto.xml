@@ -43,6 +43,7 @@
         <source path="http://download.opensuse.org/update/leap/42.2/oss/"/>
       </repository>
       <packages type="image" patternType="onlyRequired">
+        <package name="bluedevil5"/>
         <package name="kaccounts-providers"/>
         <package name="kaccounts-integration"/>
         <package name="kio_kamera"/>
@@ -264,7 +265,7 @@
       <language>en_US.UTF-8</language>
       <keytable>us.map.gz</keytable>
     </locale>
-    <estimated_size>3870</estimated_size>
+    <estimated_size>3880</estimated_size>
     <size_offset>0</size_offset>
     <non_interactive/>
     <oem_disk_size>16G</oem_disk_size>
