@@ -20,7 +20,7 @@
         </temporary>
       </split>
     </type>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <packagemanager>zypper</packagemanager>
     <rpm-check-signatures>false</rpm-check-signatures>
     <rpm-force>false</rpm-force>
@@ -33,6 +33,7 @@
     <user name='root' pwd='$1$4M3FT6EF$g7Fs/3TwSCAHgIjHcFcvt/' home='/root' shell='/bin/bash'/>
   </users>
   <packages type='image' patternType='onlyRequired'>
+    <package name='yast2-metapackage-handler'/>
     <package name='libreoffice-icon-theme-breeze'/>
     <package name='plasma5-pk-updates'/>
     <package name='libreoffice-templates-presentation-layouts'/>
