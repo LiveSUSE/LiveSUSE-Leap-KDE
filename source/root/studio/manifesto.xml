@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <studio_uuid>8466bd24-fd59-11df-9f90-475ae2f5345b</studio_uuid>
-  <appliance_uuid>84a56a1c-5e6c-11e7-2083-4fbb28ae4d82</appliance_uuid>
+  <appliance_uuid>3cef635e-84f9-11e7-6da7-4fbb28ae4d82</appliance_uuid>
   <config>
-    <image name="LiveSUSE_Leap_42.2_KDE" displayname="LiveSUSE_Leap_42.2_KDE" schemaversion="5.2">
+    <image name="LiveSUSE_Leap_42.3_KDE" displayname="LiveSUSE_Leap_42.3_KDE" schemaversion="5.2">
       <description type="system">
         <author>Projeto Linux Kamarada</author>
         <contact>studio-devel@suse.de</contact>
@@ -24,7 +24,7 @@
             </temporary>
           </split>
         </type>
-        <version>0.0.4</version>
+        <version>0.0.2</version>
         <packagemanager>ensconce</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>false</rpm-force>
@@ -34,211 +34,211 @@
         <locale>en_US</locale>
       </preferences>
       <users group="root">
-        <user name="root" pwd="$1$4M3FT6EF$g7Fs/3TwSCAHgIjHcFcvt/" home="/root" shell="/bin/bash"/>
+        <user name="root" pwd="$1$ZDkknFww$Bvdem47jfQBQsfraO2Bt7." home="/root" shell="/bin/bash"/>
       </users>
-      <repository type="yast2">
-        <source path="http://download.opensuse.org/distribution/leap/42.2/repo/oss/"/>
-      </repository>
       <repository type="rpm-md">
-        <source path="http://download.opensuse.org/update/leap/42.2/oss/"/>
+        <source path="http://download.opensuse.org/update/leap/42.3/oss/"/>
+      </repository>
+      <repository type="yast2">
+        <source path="http://download.opensuse.org/distribution/leap/42.3/repo/oss/"/>
       </repository>
       <packages type="image" patternType="onlyRequired">
-        <package name="yast2-metapackage-handler"/>
-        <package name="libreoffice-icon-theme-breeze"/>
-        <package name="plasma5-pk-updates"/>
-        <package name="libreoffice-templates-presentation-layouts"/>
-        <package name="libreoffice-templates-labels-a4"/>
-        <package name="libreoffice-templates-labels-letter"/>
-        <package name="libreoffice-templates-en"/>
-        <package name="xdg-user-dirs"/>
-        <package name="bluedevil5"/>
-        <package name="kaccounts-providers"/>
-        <package name="kaccounts-integration"/>
-        <package name="kio_kamera"/>
-        <package name="kde-print-manager"/>
-        <package name="kdeconnect-kde"/>
-        <package name="yast2-vm"/>
-        <package name="yast2-vpn"/>
-        <package name="yast2-sound"/>
-        <package name="yast2-snapper"/>
-        <package name="yast2-scanner"/>
-        <package name="yast2-samba-server"/>
-        <package name="yast2-samba-client"/>
-        <package name="yast2-printer"/>
-        <package name="yast2-ntp-client"/>
-        <package name="yast2-nis-client"/>
-        <package name="yast2-nfs-client"/>
-        <package name="yast2-journal"/>
-        <package name="yast2-iscsi-client"/>
-        <package name="yast2-inetd"/>
-        <package name="yast2-fonts"/>
-        <package name="yast2-auth-client"/>
-        <package name="yast2-apparmor"/>
-        <package name="yast2-add-on"/>
-        <package name="glibc-locale"/>
-        <package name="glibc"/>
-        <package name="gsettings-backend-dconf"/>
-        <package name="timezone"/>
-        <package name="zypper"/>
-        <package name="vim"/>
-        <package name="syslog-ng"/>
-        <package name="plymouth"/>
-        <package name="kernel-default"/>
-        <package name="iputils"/>
-        <package name="grub2"/>
-        <package name="patterns-openSUSE-base"/>
-        <package name="branding-openSUSE"/>
-        <package name="e2fsprogs"/>
-        <package name="yast2-firstboot"/>
-        <package name="less"/>
-        <package name="SuSEfirewall2"/>
-        <package name="yast2-x11"/>
-        <package name="gfxboot-branding-openSUSE"/>
-        <package name="grub2-branding-openSUSE"/>
-        <package name="xorg-x11-fonts"/>
-        <package name="xorg-x11-driver-video"/>
-        <package name="xorg-x11-driver-input"/>
-        <package name="xorg-x11"/>
-        <package name="x11-tools"/>
-        <package name="sax3"/>
-        <package name="kdebase4-session"/>
-        <package name="yast2-control-center-qt"/>
-        <package name="soprano-backend-virtuoso"/>
-        <package name="kwin"/>
-        <package name="libyui-qt-pkg7"/>
-        <package name="konsole"/>
-        <package name="sddm"/>
-        <package name="patterns-openSUSE-kde"/>
-        <package name="kdebase4-openSUSE"/>
-        <package name="grub"/>
-        <package name="patterns-openSUSE-x11"/>
-        <package name="patterns-openSUSE-apparmor"/>
-        <package name="patterns-openSUSE-apparmor_opt"/>
-        <package name="patterns-openSUSE-enhanced_base"/>
-        <package name="patterns-openSUSE-enhanced_base_opt"/>
-        <package name="patterns-openSUSE-fonts"/>
-        <package name="patterns-openSUSE-fonts_opt"/>
-        <package name="patterns-openSUSE-games"/>
-        <package name="patterns-openSUSE-kde_games"/>
-        <package name="patterns-openSUSE-kde_imaging"/>
-        <package name="patterns-openSUSE-kde_internet"/>
-        <package name="patterns-openSUSE-kde_multimedia"/>
-        <package name="patterns-openSUSE-kde_office"/>
-        <package name="patterns-openSUSE-kde_plasma"/>
-        <package name="patterns-openSUSE-kde_utilities"/>
-        <package name="patterns-openSUSE-kde_utilities_opt"/>
-        <package name="patterns-openSUSE-kde_yast"/>
-        <package name="patterns-openSUSE-multimedia"/>
-        <package name="patterns-openSUSE-multimedia_opt"/>
-        <package name="patterns-openSUSE-non_oss"/>
-        <package name="patterns-openSUSE-non_oss_opt"/>
-        <package name="patterns-openSUSE-office"/>
-        <package name="patterns-openSUSE-office_opt"/>
-        <package name="patterns-openSUSE-sw_management"/>
-        <package name="patterns-openSUSE-sw_management_kde"/>
-        <package name="patterns-openSUSE-x11_opt"/>
-        <package name="patterns-openSUSE-yast2_basis"/>
-        <package name="patterns-openSUSE-imaging"/>
-        <package name="patterns-openSUSE-imaging_opt"/>
-        <package name="libqt5-linguist"/>
-        <package name="libqt5-qttools"/>
-        <package name="kmahjongg"/>
-        <package name="kreversi"/>
-        <package name="kpat"/>
-        <package name="kmines"/>
-        <package name="ksudoku"/>
-        <package name="gimp"/>
-        <package name="gwenview5"/>
-        <package name="libreoffice-draw"/>
-        <package name="skanlite"/>
-        <package name="akregator5"/>
-        <package name="kdepim"/>
-        <package name="MozillaFirefox"/>
-        <package name="kmail5"/>
-        <package name="plasma5-desktop"/>
-        <package name="konqueror"/>
-        <package name="konversation"/>
-        <package name="kopete"/>
-        <package name="amarok"/>
-        <package name="dragonplayer"/>
-        <package name="k3b"/>
-        <package name="kscd"/>
-        <package name="kaddressbook5"/>
-        <package name="kontact5"/>
-        <package name="korganizer5"/>
-        <package name="libreoffice-base"/>
-        <package name="libreoffice-calc"/>
-        <package name="libreoffice-impress"/>
-        <package name="libreoffice"/>
-        <package name="libreoffice-writer"/>
-        <package name="okular"/>
-        <package name="catdoc"/>
-        <package name="systemsettings5"/>
-        <package name="java-1_8_0-openjdk-plugin"/>
-        <package name="cups"/>
-        <package name="libqt4-x11"/>
-        <package name="yast2"/>
-        <package name="ark"/>
-        <package name="dolphin"/>
-        <package name="kinfocenter5"/>
-        <package name="yast2-packager"/>
-        <package name="kget"/>
-        <package name="ksysguard5"/>
-        <package name="kwalletmanager5"/>
-        <package name="java-1_8_0-openjdk-headless"/>
-        <package name="system-config-printer"/>
-        <package name="xterm"/>
-        <package name="kcalc"/>
-        <package name="kcharselect"/>
-        <package name="kcolorchooser"/>
-        <package name="kgpg"/>
-        <package name="kleopatra5"/>
-        <package name="kmag"/>
-        <package name="kmousetool"/>
-        <package name="knotes5"/>
-        <package name="kompare"/>
-        <package name="kruler"/>
-        <package name="kwrite"/>
-        <package name="spectacle"/>
-        <package name="sweeper"/>
-        <package name="open-vm-tools"/>
-        <package name="open-vm-tools-desktop"/>
-        <package name="virtualbox-guest-tools"/>
-        <package name="virtualbox-guest-x11"/>
-        <package name="xf86-input-vmmouse"/>
-        <package name="xf86-video-vmware"/>
-        <package name="patterns-openSUSE-laptop"/>
-        <package name="crda"/>
-        <package name="iw"/>
-        <package name="pcmciautils"/>
-        <package name="wireless-regdb"/>
-        <package name="wpa_supplicant"/>
-        <package name="sudo"/>
-        <package name="yast2-sudo"/>
-        <package name="kde-cli-tools5"/>
-        <package name="xdg-utils"/>
-        <package name="grub2-x86_64-efi"/>
-        <package name="shim" bootinclude="true"/>
+        <package name="NetworkManager"/>
         <package name="gtk2-branding-openSUSE"/>
-        <package name="gconf2-branding-openSUSE"/>
-        <package name="gio-branding-openSUSE"/>
-        <package name="gtk3-branding-openSUSE"/>
-        <package name="hicolor-icon-theme-branding-openSUSE"/>
-        <package name="kdelibs4-branding-openSUSE"/>
-        <package name="ksplash-qml-branding-openSUSE"/>
-        <package name="ksplashx-branding-openSUSE"/>
-        <package name="libpurple-branding-openSUSE"/>
-        <package name="libreoffice-branding-upstream"/>
-        <package name="MozillaFirefox-branding-openSUSE"/>
-        <package name="NetworkManager-branding-openSUSE"/>
-        <package name="PackageKit-branding-openSUSE"/>
-        <package name="plasma5-workspace-branding-openSUSE"/>
-        <package name="plymouth-branding-openSUSE"/>
-        <package name="sddm-branding-openSUSE"/>
-        <package name="systemd-presets-branding-openSUSE"/>
-        <package name="wallpaper-branding-openSUSE"/>
-        <package name="yast2-branding-openSUSE"/>
+        <package name="shim" bootinclude="true"/>
+        <package name="grub2-x86_64-efi"/>
+        <package name="xdg-utils"/>
+        <package name="kde-cli-tools5"/>
+        <package name="yast2-sudo"/>
+        <package name="sudo"/>
+        <package name="wpa_supplicant"/>
+        <package name="wireless-regdb"/>
+        <package name="pcmciautils"/>
+        <package name="iw"/>
+        <package name="crda"/>
+        <package name="patterns-openSUSE-laptop"/>
+        <package name="xf86-video-vmware"/>
+        <package name="xf86-input-vmmouse"/>
+        <package name="virtualbox-guest-x11"/>
+        <package name="virtualbox-guest-tools"/>
+        <package name="open-vm-tools-desktop"/>
+        <package name="open-vm-tools"/>
+        <package name="sweeper"/>
+        <package name="spectacle"/>
+        <package name="kwrite"/>
+        <package name="kruler"/>
+        <package name="kompare"/>
+        <package name="knotes5"/>
+        <package name="kmousetool"/>
+        <package name="kmag"/>
+        <package name="kleopatra5"/>
+        <package name="kgpg"/>
+        <package name="kcolorchooser"/>
+        <package name="kcharselect"/>
+        <package name="kcalc"/>
+        <package name="xterm"/>
+        <package name="system-config-printer"/>
+        <package name="java-1_8_0-openjdk-headless"/>
+        <package name="kwalletmanager5"/>
+        <package name="ksysguard5"/>
+        <package name="kget"/>
+        <package name="yast2-packager"/>
+        <package name="kinfocenter5"/>
+        <package name="dolphin"/>
+        <package name="ark"/>
+        <package name="yast2"/>
+        <package name="libqt4-x11"/>
+        <package name="cups"/>
+        <package name="java-1_8_0-openjdk-plugin"/>
+        <package name="systemsettings5"/>
+        <package name="catdoc"/>
+        <package name="okular"/>
+        <package name="libreoffice-writer"/>
+        <package name="libreoffice"/>
+        <package name="libreoffice-impress"/>
+        <package name="libreoffice-calc"/>
+        <package name="libreoffice-base"/>
+        <package name="korganizer5"/>
+        <package name="kontact5"/>
+        <package name="kaddressbook5"/>
+        <package name="kscd"/>
+        <package name="k3b"/>
+        <package name="dragonplayer"/>
+        <package name="amarok"/>
+        <package name="kopete"/>
+        <package name="konversation"/>
+        <package name="konqueror"/>
+        <package name="plasma5-desktop"/>
+        <package name="kmail5"/>
+        <package name="MozillaFirefox"/>
+        <package name="akregator5"/>
+        <package name="skanlite"/>
+        <package name="libreoffice-draw"/>
+        <package name="gwenview5"/>
+        <package name="gimp"/>
+        <package name="ksudoku"/>
+        <package name="kmines"/>
+        <package name="kpat"/>
+        <package name="kreversi"/>
+        <package name="kmahjongg"/>
+        <package name="libqt5-qttools"/>
+        <package name="libqt5-linguist"/>
+        <package name="patterns-openSUSE-imaging_opt"/>
+        <package name="patterns-openSUSE-imaging"/>
+        <package name="patterns-openSUSE-yast2_basis"/>
+        <package name="patterns-openSUSE-x11_opt"/>
+        <package name="patterns-openSUSE-sw_management_kde"/>
+        <package name="patterns-openSUSE-sw_management"/>
+        <package name="patterns-openSUSE-office_opt"/>
+        <package name="patterns-openSUSE-office"/>
+        <package name="patterns-openSUSE-non_oss_opt"/>
+        <package name="patterns-openSUSE-non_oss"/>
+        <package name="patterns-openSUSE-multimedia_opt"/>
+        <package name="patterns-openSUSE-multimedia"/>
+        <package name="patterns-openSUSE-kde_yast"/>
+        <package name="patterns-openSUSE-kde_utilities_opt"/>
+        <package name="patterns-openSUSE-kde_utilities"/>
+        <package name="patterns-openSUSE-kde_plasma"/>
+        <package name="patterns-openSUSE-kde_office"/>
+        <package name="patterns-openSUSE-kde_multimedia"/>
+        <package name="patterns-openSUSE-kde_internet"/>
+        <package name="patterns-openSUSE-kde_imaging"/>
+        <package name="patterns-openSUSE-kde_games"/>
+        <package name="patterns-openSUSE-games"/>
+        <package name="patterns-openSUSE-fonts_opt"/>
+        <package name="patterns-openSUSE-fonts"/>
+        <package name="patterns-openSUSE-enhanced_base_opt"/>
+        <package name="patterns-openSUSE-enhanced_base"/>
+        <package name="patterns-openSUSE-apparmor_opt"/>
+        <package name="patterns-openSUSE-apparmor"/>
+        <package name="patterns-openSUSE-x11"/>
+        <package name="grub"/>
+        <package name="kdebase4-openSUSE"/>
+        <package name="patterns-openSUSE-kde"/>
+        <package name="sddm"/>
+        <package name="konsole"/>
+        <package name="libyui-qt-pkg7"/>
+        <package name="kwin"/>
+        <package name="soprano-backend-virtuoso"/>
+        <package name="yast2-control-center-qt"/>
+        <package name="kdebase4-session"/>
+        <package name="sax3"/>
+        <package name="x11-tools"/>
+        <package name="xorg-x11"/>
+        <package name="xorg-x11-driver-input"/>
+        <package name="xorg-x11-driver-video"/>
+        <package name="xorg-x11-fonts"/>
+        <package name="grub2-branding-openSUSE"/>
+        <package name="gfxboot-branding-openSUSE"/>
+        <package name="yast2-x11"/>
+        <package name="SuSEfirewall2"/>
+        <package name="less"/>
+        <package name="yast2-firstboot"/>
+        <package name="e2fsprogs"/>
+        <package name="branding-openSUSE"/>
+        <package name="patterns-openSUSE-base"/>
+        <package name="grub2"/>
         <package name="libreoffice-kde4"/>
+        <package name="yast2-branding-openSUSE"/>
+        <package name="wallpaper-branding-openSUSE"/>
+        <package name="systemd-presets-branding-openSUSE"/>
+        <package name="sddm-branding-openSUSE"/>
+        <package name="plymouth-branding-openSUSE"/>
+        <package name="plasma5-workspace-branding-openSUSE"/>
+        <package name="PackageKit-branding-openSUSE"/>
+        <package name="NetworkManager-branding-openSUSE"/>
+        <package name="MozillaFirefox-branding-openSUSE"/>
+        <package name="libreoffice-branding-upstream"/>
+        <package name="libpurple-branding-openSUSE"/>
+        <package name="ksplashx-branding-openSUSE"/>
+        <package name="ksplash-qml-branding-openSUSE"/>
+        <package name="kdelibs4-branding-openSUSE"/>
+        <package name="hicolor-icon-theme-branding-openSUSE"/>
+        <package name="gtk3-branding-openSUSE"/>
+        <package name="gio-branding-openSUSE"/>
+        <package name="gconf2-branding-openSUSE"/>
+        <package name="iputils"/>
+        <package name="kernel-default"/>
+        <package name="plymouth"/>
+        <package name="syslog-ng"/>
+        <package name="vim"/>
+        <package name="zypper"/>
+        <package name="timezone"/>
+        <package name="gsettings-backend-dconf"/>
+        <package name="glibc"/>
+        <package name="glibc-locale"/>
+        <package name="yast2-add-on"/>
+        <package name="yast2-apparmor"/>
+        <package name="yast2-auth-client"/>
+        <package name="yast2-fonts"/>
+        <package name="yast2-inetd"/>
+        <package name="yast2-iscsi-client"/>
+        <package name="yast2-journal"/>
+        <package name="yast2-nfs-client"/>
+        <package name="yast2-nis-client"/>
+        <package name="yast2-ntp-client"/>
+        <package name="yast2-printer"/>
+        <package name="yast2-samba-client"/>
+        <package name="yast2-samba-server"/>
+        <package name="yast2-scanner"/>
+        <package name="yast2-snapper"/>
+        <package name="yast2-sound"/>
+        <package name="yast2-vpn"/>
+        <package name="yast2-vm"/>
+        <package name="kdeconnect-kde"/>
+        <package name="kde-print-manager"/>
+        <package name="kio_kamera"/>
+        <package name="kaccounts-integration"/>
+        <package name="kaccounts-providers"/>
+        <package name="bluedevil5"/>
+        <package name="xdg-user-dirs"/>
+        <package name="libreoffice-templates-en"/>
+        <package name="libreoffice-templates-labels-letter"/>
+        <package name="libreoffice-templates-labels-a4"/>
+        <package name="libreoffice-templates-presentation-layouts"/>
+        <package name="plasma5-pk-updates"/>
+        <package name="libreoffice-icon-theme-breeze"/>
+        <package name="yast2-metapackage-handler"/>
         <package name="yast2-live-installer"/>
         <package name="yast2-users"/>
         <package name="btrfsprogs"/>
@@ -253,10 +253,10 @@
       </packages>
     </image>
   </config>
-  <extra_config name="LiveSUSE_Leap_42.2_KDE">
-    <appliance_id>1723267</appliance_id>
+  <extra_config name="LiveSUSE_Leap_42.3_KDE">
+    <appliance_id>1732560</appliance_id>
     <arch>x86_64</arch>
-    <version>0.0.4</version>
+    <version>0.0.2</version>
     <logo>02/d3230a1e4c9773cc12fa74982a16d2</logo>
     <background>ee/74452ca646d75e5516fe5db8836e76</background>
     <base_system>Leap_42.1</base_system>
@@ -273,18 +273,18 @@
       <language>en_US.UTF-8</language>
       <keytable>us.map.gz</keytable>
     </locale>
-    <estimated_size>3960</estimated_size>
+    <estimated_size>3760</estimated_size>
     <size_offset>0</size_offset>
     <non_interactive/>
     <oem_disk_size>16G</oem_disk_size>
     <check_supportability>false</check_supportability>
-    <repository type="yast2">
-      <source path="http://download.opensuse.org/distribution/leap/42.2/repo/oss/" internal="false"/>
-      <name>openSUSE Leap 42.2 OSS</name>
-    </repository>
     <repository type="rpm-md">
-      <source path="http://download.opensuse.org/update/leap/42.2/oss/" internal="false"/>
-      <name>leap 42.2 updates</name>
+      <source path="http://download.opensuse.org/update/leap/42.3/oss/" internal="false"/>
+      <name>openSUSE Leap 42.3 Updates</name>
+    </repository>
+    <repository type="yast2">
+      <source path="http://download.opensuse.org/distribution/leap/42.3/repo/oss/" internal="false"/>
+      <name>OpenSuSE-42.3-oss</name>
     </repository>
     <network config="network_manager">
     </network>
