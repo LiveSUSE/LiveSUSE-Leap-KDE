@@ -9,7 +9,7 @@
 # Contact: feedback@susestudio.com
 # ============================================================================
 
-image_file='image/LiveSUSE_Leap_42.3_KDE.x86_64-0.0.2.iso'
+image_file='image/LiveSUSE_Leap_42.3_KDE.x86_64-0.0.4.iso'
 image_arch='x86_64'
 schema_ver='5.2'
 base_system='Leap_42.1'

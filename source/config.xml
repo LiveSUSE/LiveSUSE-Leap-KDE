@@ -20,7 +20,7 @@
         </temporary>
       </split>
     </type>
-    <version>0.0.2</version>
+    <version>0.0.4</version>
     <packagemanager>zypper</packagemanager>
     <rpm-check-signatures>false</rpm-check-signatures>
     <rpm-force>false</rpm-force>
@@ -33,6 +33,12 @@
     <user name='root' pwd='$1$ZDkknFww$Bvdem47jfQBQsfraO2Bt7.' home='/root' shell='/bin/bash'/>
   </users>
   <packages type='image' patternType='onlyRequired'>
+    <package name='pim-sieve-editor'/>
+    <package name='pim-data-exporter'/>
+    <package name='showfoto'/>
+    <package name='hugin'/>
+    <package name='digikam'/>
+    <package name='marble-kde'/>
     <package name='NetworkManager'/>
     <package name='gtk2-branding-openSUSE'/>
     <package name='shim' bootinclude='true'/>
@@ -55,7 +61,6 @@
     <package name='open-vm-tools'/>
     <package name='sweeper'/>
     <package name='spectacle'/>
-    <package name='kwrite'/>
     <package name='kruler'/>
     <package name='kompare'/>
     <package name='knotes5'/>
@@ -97,7 +102,6 @@
     <package name='amarok'/>
     <package name='kopete'/>
     <package name='konversation'/>
-    <package name='konqueror'/>
     <package name='plasma5-desktop'/>
     <package name='kmail5'/>
     <package name='MozillaFirefox'/>
@@ -152,7 +156,6 @@
     <package name='soprano-backend-virtuoso'/>
     <package name='yast2-control-center-qt'/>
     <package name='kdebase4-session'/>
-    <package name='sax3'/>
     <package name='x11-tools'/>
     <package name='xorg-x11'/>
     <package name='xorg-x11-driver-input'/>
