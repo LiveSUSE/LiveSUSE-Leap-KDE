@@ -5,7 +5,7 @@
     <specification>openSUSE Leap 42.1 KDE 4</specification>
   </description>
   <preferences>
-    <type boot="isoboot/suse-leap42.1" bootloader="grub2" checkprebuilt="true" flags="overlay" firmware="uefi" fsnocheck="true" hybrid="true" image="iso">
+    <type boot="isoboot/suse-leap42.1" bootloader="grub2" checkprebuilt="true" flags="overlay" firmware="uefi" fsnocheck="true" hybrid="true" image="iso" hybridpersistent="true" hybridpersistent_filesystem="ext4" kernelcmdline="splash" volid="LiveSUSE Leap 42.2 KDE">
       <split>
         <temporary>
           <file name="/var" />

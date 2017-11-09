@@ -109,10 +109,3 @@ true
 echo '** Rehashing SSL Certificates...'
 c_rehash
 
-
-sh /studio/configure_kdm4_theme.sh
-
-
-
-sh /studio/configure_kde4_background.sh
-
