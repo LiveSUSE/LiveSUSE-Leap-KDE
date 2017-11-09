@@ -1,11 +1,11 @@
-<image name="LiveSUSE_Leap_42.3_KDE" schemaversion="5.2" displayname="LiveSUSE_Leap_42.3_KDE">
+<image name="LiveSUSE_Leap_KDE" schemaversion="5.2" displayname="LiveSUSE_Leap_KDE">
   <description type="system">
     <author>Projeto Linux Kamarada</author>
-    <contact>studio-devel@suse.de</contact>
-    <specification>openSUSE Leap 42.1 KDE 4</specification>
+    <contact>linuxkamarada@gmail.com</contact>
+    <specification>LiveSUSE Leap 42.3 KDE</specification>
   </description>
   <preferences>
-    <type boot="isoboot/suse-leap42.1" bootloader="grub2" checkprebuilt="true" flags="overlay" firmware="uefi" fsnocheck="true" hybrid="true" image="iso" hybridpersistent="true" hybridpersistent_filesystem="ext4" kernelcmdline="splash" volid="LiveSUSE Leap 42.2 KDE">
+    <type boot="isoboot/suse-leap42.1" bootloader="grub2" checkprebuilt="true" flags="overlay" firmware="uefi" fsnocheck="true" hybrid="true" image="iso" hybridpersistent="true" hybridpersistent_filesystem="ext4" kernelcmdline="splash" volid="LiveSUSE Leap 42.3 KDE">
       <split>
         <temporary>
           <file name="/var" />
@@ -19,7 +19,7 @@
         </temporary>
       </split>
     </type>
-    <version>0.0.6</version>
+    <version>42.3.2017110801</version>
     <boot-theme>studio</boot-theme>
     <packagemanager>zypper</packagemanager>
     <rpm-check-signatures>false</rpm-check-signatures>
