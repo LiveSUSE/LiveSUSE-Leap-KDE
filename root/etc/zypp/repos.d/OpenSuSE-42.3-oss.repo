@@ -1,7 +1,0 @@
-[OpenSuSE-42.3-oss]
-name=OpenSuSE-42.3-oss
-baseurl=http://download.opensuse.org/distribution/leap/42.3/repo/oss/
-type=yast2
-enabled=1
-autorefresh=1
-gpgcheck=1

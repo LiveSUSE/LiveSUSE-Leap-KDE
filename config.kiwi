@@ -20,7 +20,7 @@
       </split>
     </type>
     <version>42.3.2017110801</version>
-    <boot-theme>studio</boot-theme>
+    <boot-theme>openSUSE</boot-theme>
     <packagemanager>zypper</packagemanager>
     <rpm-check-signatures>false</rpm-check-signatures>
     <rpm-force>false</rpm-force>
@@ -164,8 +164,8 @@
     <package name="xorg-x11-driver-input" />
     <package name="xorg-x11-driver-video" />
     <package name="xorg-x11-fonts" />
-    <package name="grub2-branding-openSUSE" />
-    <package name="gfxboot-branding-openSUSE" />
+    <package name="grub2-branding-openSUSE" bootinclude="true" />
+    <package name="gfxboot-branding-openSUSE" bootinclude="true" bootdelete="true"/>
     <package name="yast2-x11" />
     <package name="SuSEfirewall2" />
     <package name="less" />
@@ -179,7 +179,7 @@
     <package name="wallpaper-branding-openSUSE" />
     <package name="systemd-presets-branding-openSUSE" />
     <package name="sddm-branding-openSUSE" />
-    <package name="plymouth-branding-openSUSE" />
+    <package name="plymouth-branding-openSUSE" bootinclude="true" />
     <package name="plasma5-workspace-branding-openSUSE" />
     <package name="PackageKit-branding-openSUSE" />
     <package name="NetworkManager-branding-openSUSE" />
@@ -238,9 +238,6 @@
     <package name="yast2-live-installer" />
     <package name="yast2-users" />
     <package name="btrfsprogs" />
-    <package name="gfxboot-devel" bootinclude="true" />
-    <archive name="plymouth.tar" bootinclude="true" />
-    <archive name="sddm.tar" />
   </packages>
   <packages type="bootstrap">
     <package name="filesystem" />
