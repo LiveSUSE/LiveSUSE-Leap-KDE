@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash
 #================
 # FILE          : config.sh
 #----------------
@@ -50,8 +50,7 @@ suseImportBuildKey
 # Firewall Configuration
 #--------------------------------------
 echo '** Configuring firewall...'
-chkconfig SuSEfirewall2_init on
-chkconfig SuSEfirewall2_setup on
+systemctl enable SuSEfirewall2
 
 sed --in-place -e 's/# solver.onlyRequires.*/solver.onlyRequires = true/' /etc/zypp/zypp.conf
 
@@ -61,10 +60,11 @@ sed --in-place -e 's/# solver.onlyRequires.*/solver.onlyRequires = true/' /etc/z
 echo '** Update sysconfig entries...'
 baseUpdateSysConfig /etc/sysconfig/keyboard KEYTABLE us.map.gz
 baseUpdateSysConfig /etc/sysconfig/network/config FIREWALL yes
-baseUpdateSysConfig /etc/init.d/suse_studio_firstboot NETWORKMANAGER yes
+systemctl disable wicked
+systemctl enable NetworkManager
 baseUpdateSysConfig /etc/sysconfig/console CONSOLE_FONT lat9w-16.psfu
 baseUpdateSysConfig /etc/sysconfig/displaymanager DISPLAYMANAGER sddm
-baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
+baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM plasma5
 
 
 #======================================
@@ -105,7 +105,7 @@ baseUpdateSysConfig /etc/sysconfig/displaymanager DISPLAYMANAGER_AUTOLOGIN linux
 # Official repositories
 # (as found in http://download.opensuse.org/distribution/leap/42.3/repo/oss/control.xml)
 
-rm /etc/zypp/repos.d/*.repo
+#rm /etc/zypp/repos.d/*.repo
 zypper addrepo -f -K -n "openSUSE-Leap-42.3-Update" http://download.opensuse.org/update/leap/42.3/oss/ repo-update
 zypper addrepo -d -K -n "openSUSE-Leap-42.3-Update-Non-Oss" http://download.opensuse.org/update/leap/42.3/non-oss/ repo-update-non-oss
 zypper addrepo -f -K -n "openSUSE-Leap-42.3-Oss" http://download.opensuse.org/distribution/leap/42.3/repo/oss/ repo-oss
