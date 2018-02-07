@@ -62,7 +62,6 @@
         
         <!-- Packages that differ or were not included by the above patterns -->
         <package name="adjtimex"/>
-        <!--<package name="cdrdao"/>--><!--k3b-->
         <package name="chrony"/>
         <package name="cpio-mt"/>
         <package name="gettext-runtime"/>
@@ -85,6 +84,9 @@
         <package name="xmlbeans"/>
         <package name="zypper-aptitude"/>
         <package name="zypper-log"/>
+        <!-- Problem: nothing provides /usr/bin/cdrdao needed by k3b -->
+        <!-- https://lists.opensuse.org/opensuse-factory/2017-11/msg00453.html -->
+        <package name="cdrdao"/>
 
         <!-- Laptop pattern -->
         <package name="patterns-openSUSE-laptop"/>
