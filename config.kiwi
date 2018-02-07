@@ -41,7 +41,7 @@
         <!-- have choice for pattern() = minimal_base needed by patterns-base-base -->
         <package name="patterns-base-minimal_base"/>
         <!-- conflict for providers of krb5 needed by samba-libs -->
-        <package name="krb5"/><!-- ? -->
+        <package name="krb5"/>
         <!-- have choice for pattern() = x11_enhanced needed by patterns-base-x11 -->
         <package name="patterns-base-x11_enhanced"/>
         <!-- have choice for pattern() = enhanced_base needed by patterns-base-x11_opt -->
@@ -51,19 +51,54 @@
         <!-- have choice for pattern() = apparmor needed by patterns-base-enhanced_base -->
         <package name="patterns-base-apparmor"/>
         <!-- have choice for libqt4_sql_backend = 4.8.7 needed by libqt4-sql -->
-        <package name="libqt4-sql-sqlite"/><!-- ? -->
+        <package name="libqt4-sql-sqlite"/>
         <!-- have choice for ispell_dictionary needed by ispell -->
         <!-- have choice for ispell_english_dictionary needed by ispell -->
         <package name="ispell-american"/>
         <!-- have choice for libhdf5_hl.so.100()(64bit) needed by libvigraimpex11 -->
-        <package name="libhdf5_hl100"/><!-- ? -->
+        <package name="libhdf5_hl100"/>
         <!-- KiwiKernelLookupError: No kernel found -->
         <package name="kernel-default"/>
         
-        <package name="checkmedia"/>
-        <package name="dhcp-client"/>
-        <package name="grub2-i386-pc"/>
+        <!-- Packages that differ or were not included by the above patterns -->
+        <package name="adjtimex"/>
+        <!--<package name="cdrdao"/>--><!--k3b-->
+        <package name="chrony"/>
+        <package name="cpio-mt"/>
+        <package name="gettext-runtime"/>
+        <package name="gio-branding-openSUSE"/>
+        <package name="glibc-extra"/>
+        <package name="java-1_8_0-openjdk"/>
+        <package name="k3b"/>
+        <package name="kexec-tools"/>
+        <package name="libldap-data"/>
+        <package name="PackageKit-branding-openSUSE"/>
         <package name="plymouth-dracut"/>
+        <package name="publicsuffix"/>
+        <package name="rsyslog"/>
+        <package name="sddm-branding-openSUSE"/>
+        <package name="sound-theme-freedesktop"/>
+        <package name="sox"/>
+        <package name="systemd-bash-completion"/>
+        <package name="vcdimager"/>
+        <package name="xerces-j2-xml-apis"/>
+        <package name="xmlbeans"/>
+        <package name="zypper-aptitude"/>
+        <package name="zypper-log"/>
+
+        <!-- Laptop pattern -->
+        <package name="patterns-openSUSE-laptop"/>
+
+        <!-- VirtualBox and VMware support -->
+        <package name="virtualbox-guest-x11"/>
+        <package name="virtualbox-guest-tools"/>
+        <package name="xf86-video-vmware"/>
+        <package name="xf86-input-vmmouse"/>
+        <package name="open-vm-tools"/>
+        <package name="open-vm-tools-desktop"/>
+        
+        <!-- Check Installation Media -->
+        <package name="checkmedia"/>
         
         <!-- Enable support for UEFI secure boot -->
         <package name="shim"/>
@@ -86,7 +121,8 @@
         <package name="filesystem"/>
         <package name="glibc-locale"/>
         <package name="openSUSE-release"/>
-        <package name="openSUSE-release-livecd-kde"/>
+        <package name="openSUSE-release-livecd-kde"/><!-- ? -->
+        <!--<package name="openSUSE-release-appliance-custom"/>-->
         <package name="udev"/>
     </packages>
 </image>
