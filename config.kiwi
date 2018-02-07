@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<image displayname="LiveSUSE Leap 42.3 KDE" name="LimeJeOS-Leap-15.0" schemaversion="6.8">
+<image displayname="LiveSUSE Leap 15.0 KDE" name="LiveSUSE-Leap-15.0-KDE" schemaversion="6.8">
     <description type="system">
-        <author>Marcus Schaefer</author>
-        <contact>ms@suse.de</contact>
+        <author>Projeto Linux Kamarada</author>
+        <contact>linuxkamarada@gmail.com</contact>
         <specification>
-            Leap 15.0 JeOS, is a small text based image
+            LiveSUSE Leap 15.0 KDE is an image as close as possible to a clean openSUSE Leap 15.0 install with KDE desktop
         </specification>
     </description>
     <preferences>
@@ -16,11 +16,11 @@
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-excludedocs>true</rpm-excludedocs>
         <timezone>Europe/Berlin</timezone>
-        <type firmware="efi" flags="overlay" hybrid="true" hybridpersistent="true" hybridpersistent_filesystem="ext4" image="iso" kernelcmdline="splash" mediacheck="true" primary="true"/>
-        <version>1.15.0</version>
+        <type firmware="efi" flags="overlay" hybrid="true" hybridpersistent="true" hybridpersistent_filesystem="ext4" image="iso" kernelcmdline="splash" mediacheck="true" primary="true" volid="LiveSUSE_Leap_15.0_KDE"/>
+        <version>15.0.2018020201</version>
     </preferences>
     <users>
-        <user name="root" groups="root" password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root"/>
+        <user name="root" groups="root" home="/root"/>
     </users>
     <repository alias="kiwi-next-generation" priority="1" type="rpm-md">
         <source path="obs://Virtualization:Appliances:Builder/Factory"/>
@@ -28,37 +28,29 @@
     <repository alias="repo-oss" imageinclude="true" type="rpm-md">
         <source path="obs://openSUSE:Leap:15.0/standard"/>
     </repository>
-    <packages type="image">
-        <package name="bash-completion"/>
+    <repository alias="repo-update" imageinclude="true" type="rpm-md">
+        <source path="obs://openSUSE:Leap:15.0:Update/standard"/>
+    </repository>
+    <packages type="image" patternType="plusRecommended">
+		<!-- Clean openSUSE Leap 15.0 install with KDE desktop -->
+        <!-- http://download.opensuse.org/distribution/leap/15.0/repo/oss/control.xml -->
+        <package name="patterns-openSUSE-base"/>
+        <package name="patterns-openSUSE-x11"/>
+        <package name="patterns-openSUSE-kde"/>
+        <package name="sddm"/>
+
         <package name="checkmedia"/>
         <package name="dhcp-client"/>
-        <package name="fontconfig"/>
-        <package name="fonts-config"/>
-        <package name="grub2-branding-openSUSE"/>
         <package name="grub2-i386-pc"/>
-        <package name="grub2-x86_64-efi" arch="x86_64"/>
-        <package name="grub2"/>
-        <package name="ifplugd"/>
-        <package name="iproute2"/>
-        <package name="iputils"/>
-        <package name="kernel-default"/>
-        <package name="less"/>
-        <package name="lvm2"/>
-        <package name="openssh"/>
-        <package name="parted"/>
-        <package name="patterns-base-minimal_base"/>
-        <package name="patterns-openSUSE-base"/>
-        <package name="plymouth-branding-openSUSE"/>
         <package name="plymouth-dracut"/>
-        <package name="plymouth"/>
-        <package name="shim"/>
-        <package name="syslinux"/>
-        <package name="tar"/>
-        <package name="timezone"/>
-        <package name="vim"/>
-        <package name="which"/>
         
+        <!-- Enable support for UEFI secure boot -->
+        <package name="shim"/>
+        <package name="grub2-x86_64-efi" arch="x86_64"/>
+        
+        <!-- Bootsplash and graphics boot related packages -->
         <package name="gfxboot-branding-openSUSE"/>
+        <package name="grub2-branding-openSUSE"/>
         <package name="dracut-kiwi-live"/>
     </packages>
     <!-- Those are not found this way, I don't know why: -->
@@ -67,6 +59,7 @@
         <package name="dracut-kiwi-live"/>
     </packages>-->
     <packages type="bootstrap">
+		<package name="branding-openSUSE"/>
         <package name="ca-certificates"/>
         <package name="cracklib-dict-full"/>
         <package name="filesystem"/>
