@@ -38,7 +38,28 @@
         <package name="patterns-openSUSE-x11"/>
         <package name="patterns-openSUSE-kde"/>
         <package name="sddm"/>
-
+        <!-- have choice for pattern() = minimal_base needed by patterns-base-base -->
+        <package name="patterns-base-minimal_base"/>
+        <!-- conflict for providers of krb5 needed by samba-libs -->
+        <package name="krb5"/><!-- ? -->
+        <!-- have choice for pattern() = x11_enhanced needed by patterns-base-x11 -->
+        <package name="patterns-base-x11_enhanced"/>
+        <!-- have choice for pattern() = enhanced_base needed by patterns-base-x11_opt -->
+        <package name="patterns-base-enhanced_base"/>
+        <!-- have choice for pattern() = sw_management needed by patterns-base-enhanced_base -->
+        <package name="patterns-base-sw_management"/>
+        <!-- have choice for pattern() = apparmor needed by patterns-base-enhanced_base -->
+        <package name="patterns-base-apparmor"/>
+        <!-- have choice for libqt4_sql_backend = 4.8.7 needed by libqt4-sql -->
+        <package name="libqt4-sql-sqlite"/><!-- ? -->
+        <!-- have choice for ispell_dictionary needed by ispell -->
+        <!-- have choice for ispell_english_dictionary needed by ispell -->
+        <package name="ispell-american"/>
+        <!-- have choice for libhdf5_hl.so.100()(64bit) needed by libvigraimpex11 -->
+        <package name="libhdf5_hl100"/><!-- ? -->
+        <!-- KiwiKernelLookupError: No kernel found -->
+        <package name="kernel-default"/>
+        
         <package name="checkmedia"/>
         <package name="dhcp-client"/>
         <package name="grub2-i386-pc"/>
