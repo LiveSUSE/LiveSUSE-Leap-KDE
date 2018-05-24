@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<image displayname="LiveSUSE Leap 15.0 KDE" name="LiveSUSE-Leap-15.0-KDE" schemaversion="6.5">
+<image displayname="LiveSUSE Leap 15.0 KDE" name="LiveSUSE-Leap-15.0-KDE" schemaversion="6.9">
     <description type="system">
         <author>Projeto Linux Kamarada</author>
         <contact>linuxkamarada@gmail.com</contact>
@@ -16,7 +16,7 @@
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-excludedocs>true</rpm-excludedocs>
         <timezone>Europe/Berlin</timezone>
-        <type firmware="efi" flags="overlay" hybrid="true" hybridpersistent="true" hybridpersistent_filesystem="ext4" image="iso" kernelcmdline="splash" mediacheck="true" primary="true" volid="LiveSUSE_Leap_15.0_KDE"/>
+        <type firmware="efi" flags="overlay" hybridpersistent="true" hybridpersistent_filesystem="ext4" image="iso" kernelcmdline="splash" mediacheck="true" primary="true" volid="LiveSUSE_Leap_15.0_KDE"/>
         <version>15.0.2018020201</version>
     </preferences>
     <users>
@@ -62,10 +62,6 @@
         <!-- nothing provides this-is-only-for-build-envs needed by libsystemd0-mini -->
         <!-- https://lists.opensuse.org/opensuse-factory/2017-12/msg00085.html -->
         <package name="systemd"/>
-        <!-- nothing provides vpnc needed by NetworkManager-vpnc -->
-        <!-- https://build.opensuse.org/package/view_file/openSUSE:Leap:15.0:Images/livecd-leap-kde/livecd-leap-kde.kiwi?expand=1 -->
-        <package name="aaa_base" replaces="NetworkManager-vpnc"/>
-        <ignore name="NetworkManager-vpnc"/>
       	<!-- warning: %post(libzypp-plugin-appdata-1.0.1+git.20180327-lp150.1.1.noarch) scriptlet failed, exit status 6 -->
       	<!-- https://groups.google.com/forum/#!topic/kiwi-images/BP24w2iEHXU -->
       	<!-- https://build.opensuse.org/package/view_file/openSUSE:Leap:15.0:Images/livecd-leap-gnome/pre-checkin.sh?expand=1 -->
@@ -137,8 +133,6 @@
         <package name="filesystem"/>
         <package name="glibc-locale"/>
         <package name="openSUSE-release"/>
-        <!--<package name="openSUSE-release-livecd-kde"/>
-        <package name="openSUSE-release-appliance-custom"/>-->
         <package name="udev"/>
     </packages>
 </image>
