@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<image displayname="LiveSUSE Leap 15.0 KDE" name="LiveSUSE-Leap-15.0-KDE" schemaversion="6.8">
+<image displayname="LiveSUSE Leap 15.0 KDE" name="LiveSUSE-Leap-15.0-KDE" schemaversion="6.5">
     <description type="system">
         <author>Projeto Linux Kamarada</author>
         <contact>linuxkamarada@gmail.com</contact>
@@ -34,9 +34,9 @@
     <packages type="image" patternType="plusRecommended">
 		<!-- Clean openSUSE Leap 15.0 install with KDE desktop -->
         <!-- http://download.opensuse.org/distribution/leap/15.0/repo/oss/control.xml -->
-        <package name="patterns-openSUSE-base"/>
-        <package name="patterns-openSUSE-x11"/>
-        <package name="patterns-openSUSE-kde"/>
+        <package name="patterns-base-base"/>
+        <package name="patterns-base-x11"/>
+        <package name="patterns-kde-kde"/>
         <package name="sddm"/>
         <!-- have choice for pattern() = minimal_base needed by patterns-base-base -->
         <package name="patterns-base-minimal_base"/>
@@ -62,6 +62,10 @@
         <!-- nothing provides this-is-only-for-build-envs needed by libsystemd0-mini -->
         <!-- https://lists.opensuse.org/opensuse-factory/2017-12/msg00085.html -->
         <package name="systemd"/>
+        <!-- nothing provides vpnc needed by NetworkManager-vpnc -->
+        <!-- https://build.opensuse.org/package/view_file/openSUSE:Leap:15.0:Images/livecd-leap-kde/livecd-leap-kde.kiwi?expand=1 -->
+        <package name="aaa_base" replaces="NetworkManager-vpnc"/>
+        <ignore name="NetworkManager-vpnc"/>
         
         <!-- Packages that differ or were not included by the above patterns -->
         <package name="adjtimex"/>
@@ -70,14 +74,13 @@
         <package name="gettext-runtime"/>
         <package name="gio-branding-openSUSE"/>
         <package name="glibc-extra"/>
-        <package name="java-1_8_0-openjdk"/>
+        <package name="java-11-openjdk"/>
         <package name="k3b"/>
         <package name="kexec-tools"/>
         <package name="libldap-data"/>
         <package name="PackageKit-branding-openSUSE"/>
         <package name="plymouth-dracut"/>
         <package name="publicsuffix"/>
-        <package name="rsyslog"/>
         <package name="sddm-branding-openSUSE"/>
         <package name="sound-theme-freedesktop"/>
         <package name="sox"/>
@@ -87,14 +90,17 @@
         <package name="xmlbeans"/>
         <package name="zypper-aptitude"/>
         <package name="zypper-log"/>
-        <!-- Problem: nothing provides /usr/bin/cdrdao needed by k3b -->
+        <!-- nothing provides /usr/bin/cdrdao needed by k3b -->
         <!-- https://lists.opensuse.org/opensuse-factory/2017-11/msg00453.html -->
         <package name="cdrdao"/>
+        <!-- nothing provides /usr/bin/cdrecord needed by k3b -->
+        <package name="cdrecord"/>
 
         <!-- Laptop pattern -->
-        <package name="patterns-openSUSE-laptop"/>
+        <package name="patterns-desktop-laptop"/>
 
         <!-- VirtualBox and VMware support -->
+        <package name="virtualbox-guest-kmp-default"/>
         <package name="virtualbox-guest-x11"/>
         <package name="virtualbox-guest-tools"/>
         <package name="xf86-video-vmware"/>
