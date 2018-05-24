@@ -1,5 +1,5 @@
 #!/bin/bash
-rm root.tar
+rm root.tar.gz
 cd root
-tar -cvf ../root.tar *
+tar -zcvf ../root.tar.gz *
 cd ..

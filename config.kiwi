@@ -66,6 +66,11 @@
         <!-- https://build.opensuse.org/package/view_file/openSUSE:Leap:15.0:Images/livecd-leap-kde/livecd-leap-kde.kiwi?expand=1 -->
         <package name="aaa_base" replaces="NetworkManager-vpnc"/>
         <ignore name="NetworkManager-vpnc"/>
+      	<!-- warning: %post(libzypp-plugin-appdata-1.0.1+git.20180327-lp150.1.1.noarch) scriptlet failed, exit status 6 -->
+      	<!-- https://groups.google.com/forum/#!topic/kiwi-images/BP24w2iEHXU -->
+      	<!-- https://build.opensuse.org/package/view_file/openSUSE:Leap:15.0:Images/livecd-leap-gnome/pre-checkin.sh?expand=1 -->
+      	<!-- https://github.com/openSUSE/obs-build/issues/420 -->
+      	<ignore name="libzypp-plugin-appdata"/>
         
         <!-- Packages that differ or were not included by the above patterns -->
         <package name="adjtimex"/>
@@ -132,8 +137,8 @@
         <package name="filesystem"/>
         <package name="glibc-locale"/>
         <package name="openSUSE-release"/>
-        <package name="openSUSE-release-livecd-kde"/><!-- ? -->
-        <!--<package name="openSUSE-release-appliance-custom"/>-->
+        <!--<package name="openSUSE-release-livecd-kde"/>
+        <package name="openSUSE-release-appliance-custom"/>-->
         <package name="udev"/>
     </packages>
 </image>
