@@ -59,6 +59,9 @@
         <package name="libhdf5_hl100"/>
         <!-- KiwiKernelLookupError: No kernel found -->
         <package name="kernel-default"/>
+        <!-- nothing provides this-is-only-for-build-envs needed by libsystemd0-mini -->
+        <!-- https://lists.opensuse.org/opensuse-factory/2017-12/msg00085.html -->
+        <package name="systemd"/>
         
         <!-- Packages that differ or were not included by the above patterns -->
         <package name="adjtimex"/>
