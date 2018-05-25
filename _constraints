@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<constraints>
-    <hardware>
-        <disk>
-            <!-- /.build/build-vm: line 417: echo: write error: No space left on device -->
-            <size unit="G">30</size>
-        </disk>
-    </hardware>
-</constraints>
